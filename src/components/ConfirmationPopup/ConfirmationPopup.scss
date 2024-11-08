@@ -1,0 +1,41 @@
+.add-candidate-modal {
+  .MuiModal-backdrop {
+    background: rgba(20, 20, 20, 0.8);
+  }
+  .add-candidate-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 45rem;
+    background-color: #fff;
+    padding: 2.5rem 2.5rem 3.1rem;
+    border-radius: 1rem;
+  }
+  .modal-title {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #141414;
+    text-align: center;
+    padding-bottom: 1.8rem;
+  }
+
+  .modal-btn-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    .cancel-btn {
+      background-color: #f8f8f8;
+      color: #141414;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .verification-btn {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+}

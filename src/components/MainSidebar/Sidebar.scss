@@ -1,0 +1,135 @@
+.sidebar {
+  // padding: 0rem 0rem 0rem 1rem;
+  background-color: #f8f8f8;
+  //   height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+  .logo-text {
+    font-size: 1.9rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #141414;
+    margin: 0;
+    padding: 2rem 0.5rem 2rem 0.5rem;
+    position: sticky;
+    top: 0rem;
+    z-index: 2;
+    background-color: #f8f8f8;
+    padding: 1rem 1rem;
+  }
+}
+.sidebar-item {
+  margin-bottom: 0.25rem;
+  &:hover {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+}
+.sidebar-list-item {
+  &:hover {
+    cursor: pointer;
+  }
+}
+.slected {
+  color: #141414;
+  border-radius: 0.5rem 0 0 0.5rem;
+  background: #fff;
+  box-shadow: 0.06rem 0rem 0.19rem 0rem rgba(0, 0, 0, 0.3) inset;
+  &:hover {
+    background-color: #fff;
+  }
+  .fill-svg {
+    path {
+      fill: #141414;
+    }
+  }
+  .stroke-svg {
+    path {
+      stroke: #141414;
+    }
+  }
+  .side-item-name {
+    font-size: 14px !important;
+    span {
+      color: #141414;
+    }
+  }
+}
+.active {
+  color: #141414;
+
+  svg {
+    path {
+      stroke: #141414;
+    }
+  }
+  .side-item-name {
+    span {
+      color: #141414;
+    }
+  }
+}
+.sub-menu-list {
+  .sidebar-item {
+    padding: 0.5rem 1rem 0.5rem 2rem;
+  }
+}
+.side-item-name {
+  background: linear-gradient(90deg, #d8d8d8 0%, #f8f8f8 100%) !important;
+  margin-left: 0.8rem;
+  font-size: 14px !important;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: #141414;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+  }
+  span {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #a4a4a4;
+  }
+}
+
+.sidebar-footer {
+  position: sticky;
+  bottom: 0rem;
+  background-color: #f8f8f8;
+  padding: 1rem 1rem;
+  .sidebar-footer-logo {
+    color: #141414;
+    font-size: 1.13rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 0.313rem;
+  }
+  .copy-rights-text {
+    color: #a4a4a4;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+.side-bar {
+  margin-bottom: 0.25rem;
+}
+.sidebar-item {
+  font-size: 14px !important;
+}
+.icon-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}

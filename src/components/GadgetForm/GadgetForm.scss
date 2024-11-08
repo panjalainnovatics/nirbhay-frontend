@@ -1,0 +1,175 @@
+.add-candidate-form {
+  width: 100%;
+}
+.form-container {
+  border: solid #e3e3e8 0.1rem !important;
+  border-radius: 0.5rem;
+}
+.form-container-header {
+  display: flex;
+  height: 4.375rem;
+  background-color: black;
+  color: white;
+  font-size: 1.375rem;
+  font-weight: 700;
+  padding-left: 2rem;
+  align-items: center;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  @media only screen and (max-width: 767px){
+    height: 3.375rem;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+  }
+}
+.input-field-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  max-height: calc(100vh - 18rem);
+  overflow: auto;
+  @media only screen and (max-width: 767px){
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
+.input-field-50 {
+  width: 50%;
+  @media only screen and (max-width: 767px){
+    width: 100%;
+  }
+  & div {
+    border-radius: 0.5rem;
+    padding-right: 1rem;
+  }
+}
+.input-row-container {
+  width: 100%;
+  display: flex;
+  gap: 3rem;
+  @media only screen and (max-width: 767px){
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+.default-button {
+  background-color: black;
+  color: white;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+.button-container {
+  display: flex;
+  justify-content: end;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.auto-compelete {
+  width: 50%;
+  #designation-label {
+    color: #a4a4a4 !important
+        ;
+  }
+}
+.submit-btn-container {
+  width: 5rem;
+}
+.request-btn-container {
+  width: 12.5rem;
+}
+.outlined-button {
+  color: #a4a4a4;
+  border-color: #e3e3e3;
+  font-weight: 600;
+
+  &:hover {
+    border-color: #e3e3e3;
+  }
+}
+.upload-btn-container {
+  width: 10rem;
+}
+.upload-image-contaner {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  .image-container {
+    width: 6.25rem;
+    border-radius: 100%;
+    height: 6.25rem;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+    }
+  }
+}
+
+.save-btn {
+  color: #141414;
+  border-color: #141414;
+  &:hover {
+    border-color: #141414;
+  }
+}
+
+#menu-group {
+  .MuiPaper-root {
+    max-height: 14rem;
+    overflow-y: auto;
+  }
+}
+.photo-input {
+  &:hover {
+    cursor: pointer;
+  }
+}
+label {
+  &:hover {
+    cursor: pointer;
+  }
+}
+.css-1dz910r-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #e3e3e8 !important;
+}
+.css-11tkqe8-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: #a4a4a4 !important;
+}
+.joining-date {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  color: #a4a4a4;
+}
+
+// Check box css
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
+  color: #e3e3e3 !important;
+}
+.css-ujfx66-MuiButtonBase-root-MuiCheckbox-root {
+  color: #a4a4a4 !important;
+}
+.css-ujfx66-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
+  color: #141414 !important;
+}
+.css-jk9xte.Mui-checked {
+  color: #141414 !important;
+}
+.MuiAutocomplete-root {
+  &.Mui-focused {
+    .MuiOutlinedInput-notchedOutline {
+      border-color: #a4a4a4 !important;
+      span {
+        color: red !important;
+      }
+    }
+  }
+}
+
+.css-6hp17o-MuiList-root-MuiMenu-list {
+  max-height: 11rem;
+}

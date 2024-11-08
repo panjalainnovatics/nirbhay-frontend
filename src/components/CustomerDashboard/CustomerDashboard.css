@@ -1,0 +1,20 @@
+/* Dashboard.css */
+
+.dashboard-container {
+  padding: 16px;
+}
+
+.video-card {
+  background-color: #000; /* Primary color: Black */
+  color: #fff; /* Secondary color: White */
+  border: 1px solid #fff; /* Border color: White */
+}
+
+.video-card-content {
+  text-align: center;
+}
+
+.video-card-iframe {
+  border: none;
+  width: 100%;
+}

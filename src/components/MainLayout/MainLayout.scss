@@ -1,0 +1,33 @@
+.main-layout {
+  .main-body {
+    width: 100%;
+    .main-sidebar {
+      width: 12.5rem;
+      height: 100vh;
+    }
+    .main-right-side {
+      width: calc(100% - 12.5rem);
+    }
+    .main-content {
+      padding: 0 20px 20px 20px;
+      max-height: calc(100vh - 8rem);
+      overflow: auto;
+      @media only screen and (max-width: 767px){
+        max-height: calc(100vh - 6rem);
+      }
+    }
+  }
+  .main-header {
+    // background-color: #f8f8f8;
+    background-color: #fff;
+  }
+}
+
+.main-header{
+  background-color: #fff !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #e3e3e8 !important;
+  .header-container-fluid{
+    width: 100%;
+  }
+}

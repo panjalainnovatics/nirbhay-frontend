@@ -1,0 +1,222 @@
+// .auth-left-container {
+//   height: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+// .login-r-page-form-container {
+//   width: 32.135rem;
+// }
+// .login-r-page-form-header {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+// .login-r-page-header-logo {
+//   font-size: 5rem;
+//   font-weight: 700;
+// }
+// .login-r-page-header-subheader {
+//   margin-top: 3.125rem;
+//   font-size: 2rem;
+//   font-weight: 500;
+// }
+// .login-r-page-header-text {
+//   font-size: 1.375rem;
+//   font-weight: 500;
+//   color: #a4a4a4;
+// }
+// .login-r-from {
+//   display: flex;
+//   flex-direction: column;
+//   margin-top: 0.625rem;
+// }
+
+// .auth-image-container {
+//   width: 100%;
+//   height: 100%;
+//   border-top-left-radius: 6.25rem;
+//   border-bottom-left-radius: 6.25rem;
+//   overflow: hidden;
+// }
+// .auth-image {
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
+// .login-r-input-field-caontainer {
+//   margin-top: 1.25rem;
+// }
+// .login-r-input-field-label {
+//   font-weight: 500;
+//   font-size: 1rem;
+// }
+// .login-r-link-container {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+
+//   & a {
+//     color: #a4a4a4;
+//     font-size: 0.75rem;
+//     font-weight: 500;
+//   }
+// }
+
+// // Check box text css
+// .css-j204z7-MuiFormControlLabel-root .MuiFormControlLabel-label {
+//   font-size: 12px;
+//   font-weight: 400;
+//   text-align: center;
+//   color: #141414;
+// }
+
+// // **** Login link css****
+// .login-r-link-text {
+//   margin-top: 1rem;
+//   text-align: center;
+//   color: #a4a4a4;
+//   span {
+//     color: #141414;
+//     cursor: pointer;
+//   }
+// }
+
+// // Check box css
+// .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
+//   color: #e3e3e8;
+// }
+// .css-ujfx66-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
+//   color: #141414 !important;
+// }
+// .button-container {
+//   margin-top: 0.75rem;
+// }
+
+.auth-left-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-r-page-form-container {
+  width: 100%;
+}
+.login-r-page-form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-r-page-header-logo {
+  font-size: 5rem;
+  font-weight: 700;
+}
+.login-r-page-header-subheader {
+  margin-top: 3.125rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.login-r-page-header-text {
+  font-size: 1.375rem;
+  font-weight: 500;
+  color: #a4a4a4;
+}
+.login-r-from {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.625rem;
+  overflow: auto;
+  height: 100%;
+  padding: 0 6.25rem;
+  @media screen and (max-width: 1440px) {
+    height: calc(100vh - 11rem);
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 0 1rem;
+  }
+  @media screen and (max-width: 767px) {
+    height: calc(100vh - 10rem);
+  }
+  &.from-container{
+    height: 100%;
+    max-width: 32rem;
+    margin: 0 auto;
+  }
+}
+
+.auth-image-container {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 6.25rem;
+  border-bottom-left-radius: 6.25rem;
+  overflow: hidden;
+}
+.auth-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.login-r-input-field-container {
+  margin-top: 1.25rem;
+}
+.login-r-input-field-label {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.login-r-link-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & a {
+    color: #a4a4a4;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+}
+
+// Check box text css
+.css-j204z7-MuiFormControlLabel-root .MuiFormControlLabel-label {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  color: #141414;
+}
+
+// **** Login link css****
+.login-r-link-text {
+  margin-top: 1rem;
+  text-align: center;
+  color: #a4a4a4;
+  span {
+    color: #141414;
+    cursor: pointer;
+  }
+}
+
+// Check box css
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
+  color: #e3e3e8;
+}
+.css-ujfx66-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
+  color: #141414 !important;
+}
+.button-container {
+  margin-top: 0.75rem;
+}
+
+// New styles for two fields in a row
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 767px){
+   flex-direction: column;
+  }
+
+  .login-r-input-field-container {
+    width: 48%;
+    @media screen and (max-width: 767px){
+      width: 100%;
+    }
+  }
+}

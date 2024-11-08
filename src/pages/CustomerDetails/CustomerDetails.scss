@@ -1,0 +1,281 @@
+.employer-details-container {
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.9rem;
+  margin-top: 1.8rem;
+  .company-about {
+    display: flex;
+    gap: 1.3rem;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+    .company-details-card {
+      width: 18rem;
+      border: 1px solid #e8e8e8;
+      border-radius: 0.8rem;
+      position: relative;
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 6.9rem;
+        background-color: #141414;
+        border-radius: 0.5rem 0.5rem 0rem 0rem;
+      }
+      .company-logo {
+        width: 7.5rem;
+        height: 7.5rem;
+        border-radius: 100%;
+        border: 1px solid #e8e8e8;
+        z-index: 1;
+        position: relative;
+        margin: 50px 80px 15px;
+        @media screen and (max-width: 767px) {
+          margin: 50px auto 15px;
+        }
+      }
+      .company-name {
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        span {
+          font-size: 1.5rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          color: #141414;
+          &.company-website {
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color: #a4a4a4;
+            padding-top: 0.325rem;
+          }
+        }
+      }
+    }
+    .company-description-card {
+      padding: 1.9rem 1.9rem 1rem;
+      background-color: #f8f8f8;
+      border-radius: 0.5rem;
+      flex: 1;
+      .heading {
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-bottom: 1rem;
+        color: #a4a4a4;
+      }
+      .description {
+        max-height: 10.4rem;
+        overflow-x: auto;
+        span {
+          font-size: 0.875rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.9rem;
+          color: #141414;
+        }
+      }
+    }
+  }
+  .employer-details-card {
+    display: flex;
+    width: 100%;
+    // flex-wrap: wrap;
+    .card {
+      border-radius: 0.5rem;
+      border: 0.06rem solid #e8e8e8;
+      box-shadow: unset;
+      width: 100%;
+      margin-right: 1.9rem;
+      &:last-child {
+        margin-right: 0;
+      }
+      .card-content {
+        padding: 2rem;
+        .card-title {
+          font-size: 1.25rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          color: #a4a4a4;
+          padding-bottom: 1.3rem;
+        }
+        .spacing-card-title {
+          display: flex;
+          justify-content: space-between;
+        }
+        .edit-icon-container {
+          cursor: pointer;
+        }
+        .card-row {
+          gap: 2rem;
+          .card-details {
+            width: 23%;
+            @media screen and (max-width: 1200px) {
+              width: 44%;
+            }
+            @media screen and (max-width: 767px) {
+              width: 100%;
+            }
+            .details-title {
+              font-size: 0.875rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              color: #a4a4a4;
+              // white-space: nowrap;
+            }
+            .details-description {
+              font-size: 1.13rem;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              color: #141414;
+              padding-bottom: 0.3rem;
+
+              // white-space: nowrap;
+              .icon-container {
+                position: relative;
+                cursor: pointer;
+                &:hover {
+                  .tooltiptext {
+                    visibility: visible;
+                  }
+                }
+              }
+
+              svg {
+                margin-left: 0.25rem;
+                margin-top: 0.15rem;
+              }
+            }
+            &.employer-contact {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .btn-container {
+      display: flex;
+      justify-content: end;
+      gap: 1rem;
+      margin-top: 1rem;
+      .btns {
+        width: fit-content;
+      }
+    }
+  }
+}
+.card-row-container {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  @media screen and (max-width: 1200px) {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+.stat-card-header {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.stat-card-container {
+  display: flex;
+  gap: 1.25rem;
+  padding-top: 1rem;
+  @media screen and (max-width: 1200px) {
+    flex-wrap: wrap;
+  }
+}
+.card-container {
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  width: 25%;
+  box-shadow: unset;
+  @media screen and (max-width: 1200px) {
+    width: 48%;
+  }
+  span {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 0.3rem;
+  }
+  .card-container-count {
+    padding-top: 0.5rem;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  &.candidates {
+    background-color: rgb(164 167 246 / 10%);
+    span {
+      color: #a4a7f6;
+    }
+  }
+  &.total-verification {
+    background-color: rgba(255, 148, 84, 0.05);
+    span {
+      color: #ff9454;
+    }
+  }
+  &.smooth-verification {
+    background-color: rgba(0, 204, 105, 0.05);
+    span {
+      color: #00cc69;
+    }
+  }
+  &.cluttered-verification {
+    background-color: rgb(235 0 27 / 5%);
+    span {
+      color: #eb001b;
+    }
+  }
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+.row {
+  flex-wrap: wrap;
+  display: flex !important;
+}
+.status-button {
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  box-shadow: unset;
+  padding: 0.313rem 0.625rem;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+
+  &.status-active {
+    background: rgba(0, 204, 105, 0.05);
+    color: #00cc69;
+  }
+  &.status-deactive {
+    background: rgba(164, 164, 164, 0.05);
+    color: #a4a4a4;
+  }
+}
+.customerdetail-table {
+  // max-height: calc(100vh - 730px) !important;
+  overflow: auto;
+}
